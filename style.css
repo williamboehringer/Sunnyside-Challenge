@@ -363,7 +363,7 @@ footer {
 
 @media(min-width: 600px) {
     header {
-        background-image: url(/images/desktop/image-header.jpg);
+        background-image: url(./images/desktop/image-header.jpg);
         height: clamp(20rem, 50vw, 100svh);
     }
 
