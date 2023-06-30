@@ -53,7 +53,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 2rem;
-    background-image: url(/images/mobile/image-header.jpg);
+    background-image: url(./images/mobile/image-header.jpg);
     background-position: center;
     height: clamp(25rem, 100vw, 60rem);
     background-size: cover;
