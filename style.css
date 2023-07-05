@@ -1,3 +1,9 @@
+:root {
+    --bold-600: 600;
+    --bold-900: 900;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,19 +15,19 @@
 }
 
 ul {
-    position: absolute;
-    z-index: 10000;
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    list-style-type: none;
     gap: 1.5rem;
+    list-style-type: none;
     background-color: white;
     color: black;
-    aspect-ratio: 1 /1 ;
     width: clamp(15rem, 40vw, 70%);
+    aspect-ratio: 1 /1 ;
     margin-inline: auto;
+    position: absolute;
+    z-index: 10000;
     top: 3rem;
     left: 50%;
     transform: translateX(-50%);
@@ -30,7 +36,7 @@ ul {
 p, a, span {
     font-family: Barlow;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: var(--bold-600);
 }
 
 p {
@@ -82,13 +88,13 @@ li.contact a {
 
 li.contact:hover {
     background-color: hsla(219, 25%, 89%, 0.3);
-    
+
 }
 
 .header-title {
     font-family: Fraunces;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: var(--bold-900);
     font-size: clamp(1.5rem, 8vw, 3rem);
     letter-spacing: .5rem;
 }
@@ -100,7 +106,7 @@ button {
 
 h2 {
     font-family: Fraunces;
-    font-weight: 900;
+    font-weight: var(--bold-900);
     font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
 
@@ -135,6 +141,7 @@ div.transform, div.stand-out {
     justify-content: space-between;
     height: 25rem;
     padding: clamp(5%, 10%, 15%);
+    background-color: white;
 }
 
 .transform p, .stand-out p, div.graphic-design, div.photography p  {
@@ -143,19 +150,20 @@ div.transform, div.stand-out {
 
 .transform a, .stand-out a{
     font-family: Fraunces;
-    font-weight: 900;
+    font-weight: var(--bold-900);
     text-transform: uppercase;
 }
 
 .transform-image, .stand-out-image {
-    height: clamp(10rem, 70vw, 40rem);
+    aspect-ratio: 1 / 1;
+    height: clamp(10rem, 80vw, 40rem);
 }
 
 div.graphic-design, div.photography {
     display: flex;
     justify-content: center;
     color: #23554a;
-    font-weight: 600;
+    font-weight: var(--bold-600);
     height: clamp(40rem, 150vw, 50rem);
     padding: clamp(5%, 10%, 15%);
 }
@@ -170,7 +178,7 @@ div.graphic-design-content, div.photography-content {
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    
+
     gap: 1.5rem;
 }
 
@@ -256,6 +264,7 @@ div.graphic-design-content, div.photography-content {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: white;
 }
 
 .feedbacks {
@@ -333,7 +342,6 @@ footer {
 
 .footer-content {
     gap: 2.5rem;
-    max-width: 50%;
     display: grid;
     place-items: center;
 }
@@ -345,7 +353,7 @@ footer {
 
 .footer-content a {
     color: #448879;
-    font-weight: 600;
+    font-weight: var(--bold-600);
 }
 
 .media-links {
@@ -381,12 +389,12 @@ footer {
         grid-column: 1 / 2;
         grid-row: 2 / 3
     }
-    
+
     .transform-image {
         background-image: url(./images/desktop/image-transform.jpg);
         grid-column: 2 / 2;
     }
-    
+
     div.graphic-design {
         background-image: url(./images/desktop/image-graphic-design.jpg);
     }
@@ -442,13 +450,14 @@ footer {
     }
 
     div.transform, div.transform-image, div.stand-out, div.stand-out-image, div.photography, div.graphic-design {
+        aspect-ratio: unset;
         height: clamp(30rem, 50vw, 40rem);
     }
 
     div.graphic-design, div.photography {
         position: relative;
     }
-    
+
     div.graphic-design-content, div.photography-content {
         position: absolute;
         max-width: 90%;
@@ -462,7 +471,7 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-    
+
     .clients {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
