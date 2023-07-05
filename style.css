@@ -1,8 +1,9 @@
 :root {
     --bold-600: 600;
     --bold-900: 900;
+    --barlow-font: Barlow;
+    --fraunces-font: Fraunces
 }
-
 
 * {
     margin: 0;
@@ -34,7 +35,7 @@ ul {
 }
 
 p, a, span {
-    font-family: Barlow;
+    font-family: var(--barlow-font);
     text-decoration: none;
     font-weight: var(--bold-600);
 }
@@ -83,7 +84,7 @@ li.contact {
 }
 
 li.contact a {
-    font-family: Fraunces;
+    font-family: var(--fraunces-font);
 }
 
 li.contact:hover {
@@ -92,7 +93,7 @@ li.contact:hover {
 }
 
 .header-title {
-    font-family: Fraunces;
+    font-family: var(--fraunces-font);
     text-transform: uppercase;
     font-weight: var(--bold-900);
     font-size: clamp(1.5rem, 8vw, 3rem);
@@ -105,7 +106,7 @@ button {
 }
 
 h2 {
-    font-family: Fraunces;
+    font-family: var(--fraunces-font);
     font-weight: var(--bold-900);
     font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
@@ -149,7 +150,7 @@ div.transform, div.stand-out {
 }
 
 .transform a, .stand-out a{
-    font-family: Fraunces;
+    font-family: var(--fraunces-font);
     font-weight: var(--bold-900);
     text-transform: uppercase;
 }
@@ -228,7 +229,7 @@ div.graphic-design-content, div.photography-content {
 .transform, .stand-out, .transform-image, .stand-out-image{
     display: grid;
     gap: .3rem;
-    font-family: Barlow;
+    font-family: var(--barlow-font);
     font-size: 1.1rem;
     color: black;
     padding: clamp(5%, 10%, 15%)
@@ -295,7 +296,7 @@ div.graphic-design-content, div.photography-content {
 
 .client-info h3 {
     color: #252c33;
-    font-family: Fraunces;
+    font-family: var(--fraunces-font);
 }
 
 .client-photo {
